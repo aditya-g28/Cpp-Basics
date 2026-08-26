@@ -5,6 +5,9 @@ int main() {
     int day;
     cout << "Enter a day number (1-7): ";
     cin >> day;
+    if(day > 7 && day < 1){
+        cout << "Not valid enter again" << "\n";
+    }
     
     switch (day) {
         case 1: cout << "Monday\n"; break;
